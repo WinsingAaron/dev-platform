@@ -1,0 +1,3 @@
+module QtStudio3D.OpenGL
+plugin declarative_qtstudio3dopengl
+classname Q3DSPlugin
