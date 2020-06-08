@@ -7,6 +7,7 @@ except ImportError as e:
     import wrap
 
 from PySide2 import QtWidgets
+from shiboken2 import wrapInstance
 
 
 def SlotPrintMsg(*args, **kwargs):
@@ -18,7 +19,15 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     # wp.EQ_sayHello()
     # wp.EQ_createWidget()
+
     widget_ = wp.EQ_getWidget()
+    w_widget_ = wrapInstance(long(widget_), QtWidgets.QWidget)
+
+    w_widget_.valueChanged.connect(SlotPrintMsg)
+
+    w_widget_.setValue(1)
+
+    print(w_widget_)
     print(widget_)
     wp.EQ_widgetShow(widget_)
 
