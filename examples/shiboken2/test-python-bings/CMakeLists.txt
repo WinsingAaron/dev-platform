@@ -56,8 +56,8 @@ set(generated_sources
 # Use provided python interpreter if given.
 if (NOT python_interpreter)
     find_program(python_interpreter "python") #设置python的exe#####################################################
-    find_package(Python2 REQUIRED COMPONENTS Interpreter Development)
 endif ()
+find_package(Python2 REQUIRED COMPONENTS Interpreter Development)
 message(STATUS "Using python interpreter: ${python_interpreter}")
 
 set(PYSIDE2_DIR ${Python2_SITELIB}/PySide2)

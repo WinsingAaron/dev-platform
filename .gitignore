@@ -175,6 +175,3 @@ $RECYCLE.BIN/
 /python/windows10-python-2.7.15/Scripts/pip.exe
 /python/windows10-python-2.7.15/Scripts/pip3.7.exe
 /python/windows10-python-2.7.15/Scripts/pip3.exe
-
-# repo examples
-/examples/shiboken2/Example_Qt_and_Shiboken2/
