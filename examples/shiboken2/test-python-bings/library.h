@@ -1,0 +1,6 @@
+#ifndef TEST_PYTHON_BINGS_LIBRARY_H
+#define TEST_PYTHON_BINGS_LIBRARY_H
+
+void hello();
+
+#endif //TEST_PYTHON_BINGS_LIBRARY_H
